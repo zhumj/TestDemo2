@@ -9,7 +9,7 @@
     <servlet>
         <!--定义Servlet的名称-->
         <servlet-name>ApiServlet</servlet-name>
-        <!--容器   -Servlet的类&ndash;&gt;-->
+        <!--容器   -Servlet的类;-->
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
         <init-param>
             <!--映射的包名 用于搜索处理-->
@@ -28,7 +28,7 @@
     <!--映射-->
     <servlet-mapping>
         <servlet-name>ApiServlet</servlet-name>
-        <!--访问路径  定义Servlet所对应的RUL   也就是说其他接口要被访问的时候  要加上/api/  这个-->
+        <!--访问路径  定义Servlet所对应的RUL   也就是说其他接口要被访问的时候  要加上/test/  这个-->
         <url-pattern>/test/*</url-pattern>
     </servlet-mapping>
 

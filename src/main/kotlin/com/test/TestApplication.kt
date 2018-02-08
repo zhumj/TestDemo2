@@ -9,7 +9,8 @@ class TestApplication: ResourceConfig() {
     init {
         packages("com.text.service")
 
-        register(FastCharsetProvider::class)
+        register(FastCharsetProvider::class)//添加默认的Jackson解析器
+        //注册日志打印输出
         register(Logger::class)
     }
 
